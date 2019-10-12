@@ -1,1 +1,1 @@
-# js-lotto
+# Lotto generator in javascript
