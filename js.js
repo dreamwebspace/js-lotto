@@ -1,9 +1,9 @@
 function generate(size, lowest, highest) {
-	var numbers = [];
-	for(var i = 0; i < size; i++) {
-		var add = true;
-		var randomNumber = Math.floor(Math.random() * highest) + 1;
-		for(var y = 0; y < highest; y++) {
+	let numbers = [];
+	for(let i = 0; i < size; i++) {
+		let add = true;
+		let randomNumber = Math.floor(Math.random() * highest) + 1;
+		for(let y = 0; y < highest; y++) {
 			if(numbers[y] == randomNumber) {
 				add = false;
 			}
@@ -15,9 +15,9 @@ function generate(size, lowest, highest) {
 		}
 	}
   
-	var highestNumber = 0;
-	for(var m = 0; m < numbers.length; m++) {
-		for(var n = m + 1; n < numbers.length; n++) {
+	let highestNumber = 0;
+	for(let m = 0; m < numbers.length; m++) {
+		for(let n = m + 1; n < numbers.length; n++) {
 			if(numbers[n] < numbers[m]) {
 				highestNumber = numbers[m];
 				numbers[m] = numbers[n];
